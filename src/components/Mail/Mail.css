@@ -1,0 +1,47 @@
+.mensaje{
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 3px;
+    background: transparent;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+}
+
+.nombre{
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 5px;
+    background: transparent;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+}
+
+.email{
+    width: 70%;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    background: transparent;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.mailbtn{
+    position: relative;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    background: transparent;
+    border-radius: 2px;
+    color: white;
+    border: 2px solid white;
+    cursor:pointer;
+}
+
+::placeholder{
+    color: white;
+}

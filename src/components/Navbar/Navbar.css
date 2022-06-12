@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.name {
+    position: absolute;
+    color: #fff;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    list-style: none;
+    line-height: 50px;
+    border-top: 1px solid #DCE3E3;
+    pointer-events: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    height: 100%;
+    width: 20%;
+    background: #11101d;
+    padding: 6px 14px;
+    border-right: 1px solid #DCE3E3;
+    border-left: 1px solid #DCE3E3;
+}
+
+.logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #DCE3E3;
+}
+
+.logo_content .logo i {
+    font-size: 20px;
+    margin-left: 6px;
+    margin-right: 5px;
+}
+
+.logo_name {
+    font-size: 20px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.nav_list {
+    margin-top: 20px;
+}
+
+.navli{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 0;
+    list-style: none;
+    line-height: 50px;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navli:hover {
+    color: #11101d;
+    background: #DCE3E3;
+}
+
+.iconli {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.links_name {
+    pointer-events: none;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) { 
+    .navbar {
+        width: 25%;
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 90px;
+        width: 100%;
+        background: #11101d;
+        padding: 6px 14px;
+        border: none;
+        z-index: 1;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navli {
+        display: grid;
+        grid-gap: 10px;
+        list-style: none;
+        width: 70vw;
+        justify-content: center;
+        font-size: 20px
+    }
+
+    .nav_list {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        display: inline-flex;
+        transform: translateX(-50%);
+        left: 50%;
+        top: -10px;
+        border-bottom: 1px solid #DCE3E3;
+    }
+
+    .iconli {
+        border: 1px solid #DCE3E3;
+    }
+
+    .links_name {
+        display: none;
+    }
+
+    .links {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 20%;
+        border-width: 20px;
+    }
+
+    .name {
+        display: none;
+    }
+}
